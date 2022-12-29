@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <meta name="description" content="Page Description">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+</head>
+
+<body>
+  <header class="sticky top-0 w-full bg-gradient-to-r from-blue-800 to-indigo-900">
+    <h1 class="text-center text-2xl sm:text-4xl p-4 text-neutral-50">Weather Dashboard</h1>
+  </header>
+  <main class="flex flex-col md:flex-row gap-4 justify-between h-40 md:min-h-screen-calc">
+    <aside class="flex flex-col md:min-w-max self-stretch">
+      <h2 class="w-full text-lg sm:text-xl md:text-2xl my-3 p-3 text-neutral-900">Search for a City:</h2>
+      <form id="city-search-form" class="flex sm:flex-col" action="submit">
+        <input required id="city-input" class="inline-block sm:block w-1/2 sm:w-[80%] mx-3 sm:mx-auto my-1 py-2 px-1 rounded border border-neutral-500" type="text" name="city" placeholder="City Name">
+        <button id="city-search" class="inline-block sm:block w-1/2 sm:w-[80%] mx-3 sm:mx-auto my-1 py-2 rounded bg-blue-200" type="submit">Search</button>
+      </form>
+      <div id="search-history" class="flex flex-row md:flex-col overflow-x-scroll md:overflow-auto"></div>
+    </aside>
+    <section id="weather-dashboard" class="basis-full">
+      <div id="current-weather"></div>
+      <div id="forecast-time"></div>
+      <div id="forecast" class="grid w-4/5 sm:min-w-max sm:w-full sm:grid-flow-col h-auto overflow-x-auto my-3 mx-auto px-3 text-neutral-900"></div>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
