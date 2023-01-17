@@ -7,7 +7,7 @@ This is a weather app that will give you the weather outlook for multiple cities
 The following image shows the web application's appearance and functionality:
 
 ![The weather app includes a search option, and a five-day forecast and current weather conditions for Salt Lake City.](./WeatherDashboard.gif)
-
+https://kevinuriarte.github.io/Weather-Dashboard/
 
 ## User Story
 
